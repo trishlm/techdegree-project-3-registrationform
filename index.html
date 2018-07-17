@@ -34,7 +34,8 @@
       <input type="text" id="city" name="user_city">
 
       <label for="state">State</label>
-      <select id="state" name="user_state" placeholder="Choose State">
+      <select id="state" name="user_state">
+        <option value="" disabled selected>Choose State</option>
         <option value="al">Alabama</option>
         <option value="ak">Alaska</option>
         <option value="az">Arizona</option>
@@ -90,6 +91,36 @@
       <label for="zip">Zip Code</label>
       <input type="text" id="zip" name="user_zip">
 
+    </fieldset>
+
+    <fieldset>
+
+      <legend>Newsletter</legend>
+
+        <h3>Select the newsletters you would like to receive</h3>
+
+        <input type="checkbox" id="htmlnews" value="html_news" name="news_type">
+        <label for="htmlnews">HTML News</label>
+
+        <input type="checkbox" id="cssnews" value="css_news" name="news_type">
+        <label for="cssnews">CSS News</label>
+
+        <input type="checkbox" id="javascriptnews" value="javascript_news" name="news_type">
+        <label for="javascriptnews">Javascript News</label>
+
+        <h3>Newsletter format</h3>
+
+        <input type="radio" id="htmlnewsletter" value="html_newsletter" name="newsletter_type">
+        <label for="htmlnewsletter">HTML</label>
+
+        <input type="radio" id="plainnewsletter" value="plain_newsletter" name="newsletter_type">
+        <label for="plainnewsletter">Plain text</label><br>
+
+        <h3>Other topics you'd like to hear about</h3>
+        <label for="othertopics"></label>
+        <textarea name="other_topics" id="othertopics"></textarea>
+
+      <button type="submit">Sign Up</button>
     </fieldset>
 
 
