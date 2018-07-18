@@ -2,6 +2,81 @@
 
 /****font-family: 'Cabin', sans-serif;****/
 
-/* * {
+* {
   box-sizing: border-box;
-} */
+  font-family: 'Cabin', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+  background: #47494c;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+h3 {
+  margin: 10px 0 10px 0;
+
+
+
+}
+
+header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+legend {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+
+label {
+  display: flex;
+  margin: 0;
+}
+
+input[type="text"],
+select,
+textarea {
+  border: none;
+  background-color: #e5edf9;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: flex;
+  float: left;
+  margin-left: -1px;
+
+
+}
+
+textarea {
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+
+button {
+  background-color: #5bc6b8;
+
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1.4em;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+}
