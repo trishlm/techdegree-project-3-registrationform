@@ -59,9 +59,37 @@ input[type="checkbox"] {
   display: flex;
   float: left;
   margin-left: -1px;
-
-
 }
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+:-moz-placeholder {
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/****Format placeholder State****/
+option:disabled {
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+/****Verify code above****/
 
 textarea {
   padding: 50px;
@@ -79,4 +107,20 @@ button {
   width: 100%;
   margin: 0;
   padding: 40px;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.openingline,
+footer {
+  color: #989ba0;
+}
+
+h3,
+label {
+  color: #58595b;
 }
