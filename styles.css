@@ -8,6 +8,7 @@
   margin-left: 20px;
   margin-right: 20px;
   border-style: none;
+  color: #989ba0
 }
 
 h1 {
@@ -25,30 +26,33 @@ h3 {
 
 header {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 
-
 .contactinfoborder {
-  border-top: 3px solid;
+  border-top: 3px solid black;
   background-image: linear-gradient(black, black);
   background-repeat: no-repeat;
   background-size: 100% 1px;
   background-position: left top 3px;
-  margin-top: 30px;
-  
+  padding-top: 30px;
+
 }
 
 .newsletterborder {
-  border-top: 1px solid;
-  margin-top: 30px;
+  border-top: 1px solid black;
+  margin-top: 60px;
+  padding-top: 30px;
 }
 
+fieldset {
+  margin: -12px;
+}
 
-
+h2,
 legend {
-  display: flex;
+  color: black;
   font-size: 1.4em;
   font-weight: bold;
   padding-top: 15px;
@@ -59,6 +63,7 @@ legend {
 
 label {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -66,16 +71,23 @@ input[type="text"],
 select,
 textarea {
   border: none;
+
   background-color: #e5edf9;
   width: 100%;
   padding: 10px;
-  margin: auto;
+  margin: 0;
+  border-radius: 5px;
+}
+
+input[type="text"]:last-of-type {
+  width: 50%;
 
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   display: flex;
+  flex-wrap: wrap;
   float: left;
   margin-left: -1px;
 }
@@ -102,30 +114,24 @@ input[type="checkbox"] {
   padding-right: 10px;
 }
 
-/****Format placeholder State****/
-select:disabled {
-  font-style: italic;
-  text-align: right;
-  padding-right: 10px;
-}
-/****Verify code above****/
 
 textarea {
-  padding: 50px;
+  padding: 5px;
   margin-bottom: 30px;
+  justify-content: left;
+  height: 100px;
 }
-
 
 button {
   background-color: #5bc6b8;
-
+  border-radius: 5px;
   color: #fff;
   border: none;
   font-weight: bold;
   font-size: 1.4em;
   width: 100%;
   margin: 0;
-  padding: 40px;
+  padding: 20px;
 }
 
 footer {
@@ -135,11 +141,13 @@ footer {
 }
 
 .openingline,
-footer {
+footer,
+option {
   color: #989ba0;
 }
 
 h3,
-label {
+label,
+option {
   color: #58595b;
 }
