@@ -12,7 +12,7 @@
 }
 
 h1 {
-  background: #47494c;
+  background: #F9AF05;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -71,7 +71,6 @@ input[type="text"],
 select,
 textarea {
   border: none;
-
   background-color: #e5edf9;
   width: 100%;
   padding: 10px;
@@ -81,13 +80,19 @@ textarea {
 
 input[type="text"]:last-of-type {
   width: 50%;
+}
 
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #f4f9f9;
+    border: dotted;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   float: left;
   margin-left: -1px;
 }
@@ -150,4 +155,33 @@ h3,
 label,
 option {
   color: #58595b;
+}
+
+
+
+@media (min-width: 768px) {
+
+  input[type="text"],
+  select {
+    width: 75%;
+    float: right;
+    padding: -10px;
+
+
+  }
+
+  input[type="text"]:last-of-type {
+    width: 75%;
+  }
+
+  label[for="name"],
+  input:not([type="radio"]):not([type="checkbox"]) ~ label {
+    float: left;
+    clear: both;
+    padding: 20px;
+  }
+
+
+
+
 }
