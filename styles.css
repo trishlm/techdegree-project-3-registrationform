@@ -65,6 +65,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  cursor: pointer;
 }
 
 input[type="text"],
@@ -91,11 +92,58 @@ textarea:focus {
 
 input[type="radio"],
 input[type="checkbox"] {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   float: left;
   margin-left: -1px;
 }
+
+/* ---Change Checbox and Radiobutton Appearance-START--- */
+
+input[type=radio],
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+input[type=checkbox] + label:before {
+  content: "\00a0";
+  display: inline-block;
+  height: 16px;
+  margin: .2em 1em 0 -1.5em;
+  padding: 0;
+  background-color: #e5edf9;
+  width: 16px;
+  vertical-align: middle;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\2713";
+  background: #5bc6b8;
+  color: black;
+  text-align: center;
+  line-height: 1;
+}
+
+input[type=radio] + label:before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin: .2em 1em 0 -1.5em;
+  padding: 0;
+  background-color: #e5edf9;
+  width: 16px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+input[type=radio]:checked + label:before {
+  background-color: #5bc6b8;
+  content: "\25CF";
+  line-height: 0.9;
+  text-align: center;
+
+}
+
+
+/* ---Change Checbox and Radiobutton Appearance-END--- */
 
 ::-webkit-input-placeholder {
   font-style: italic;
