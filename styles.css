@@ -1,6 +1,5 @@
 /****BASE LAYOUT STYLES****/
 
-/****font-family: 'Cabin', sans-serif;****/
 
 * {
   box-sizing: border-box;
@@ -11,8 +10,12 @@
   color: #989ba0
 }
 
+body {
+  min-width: 320px;
+}
+
 h1 {
-  background: #F9AF05;
+  background: #5bc6b8;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -31,8 +34,8 @@ header {
 
 
 .contactinfoborder {
-  border-top: 3px solid black;
-  background-image: linear-gradient(black, black);
+  border-top: 3px solid #B2B8B7;
+  background-image: linear-gradient(#B2B8B7, #B2B8B7);
   background-repeat: no-repeat;
   background-size: 100% 1px;
   background-position: left top 3px;
@@ -41,7 +44,7 @@ header {
 }
 
 .newsletterborder {
-  border-top: 1px solid black;
+  border-top: 1px solid #B2B8B7;
   margin-top: 60px;
   padding-top: 30px;
 }
@@ -77,6 +80,8 @@ textarea {
   padding: 10px;
   margin: 0;
   border-radius: 5px;
+
+  transition: ease-in-out, width, .35s ease-in-out;
 }
 
 input[type="text"]:last-of-type {
@@ -86,8 +91,9 @@ input[type="text"]:last-of-type {
 input:focus,
 select:focus,
 textarea:focus {
-    background-color: #f4f9f9;
-    border: dotted;
+    background-color: #D3F2F1;
+    border: dotted #5bc6b8;
+    outline: none;
 }
 
 input[type="radio"],
@@ -185,8 +191,21 @@ button {
   width: 100%;
   margin: 0;
   padding: 20px;
+  box-shadow: 0 9px #999;
 }
 
+/* ---Animate Button-START--- */
+button:hover {
+  background-color: #15a895;
+}
+
+button:active {
+  background-color: #15a895;
+
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* ---Animate Button-END--- */
 footer {
   font-style: italic;
   text-align: center;
