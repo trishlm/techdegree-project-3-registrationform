@@ -22,9 +22,15 @@ h1 {
   padding: 1em;
 }
 
+.textareasection,
 h3 {
   margin: 10px 0 10px 0;
+}
 
+.textareasection {
+  font-size: 1.17em;
+  color: inherit;
+  font-weight: bold;
 }
 
 header {
@@ -81,7 +87,7 @@ textarea {
   margin: 0;
   border-radius: 5px;
 
-  transition: ease-in-out, width, .35s ease-in-out;
+  transition: ease-in-out, .35s ease-in-out;
 }
 
 input[type="text"]:last-of-type {
@@ -177,7 +183,7 @@ input[type=radio]:checked + label:before {
 textarea {
   padding: 5px;
   margin-bottom: 30px;
-  justify-content: left;
+
   height: 100px;
 }
 
@@ -232,7 +238,7 @@ option {
   select {
     width: 75%;
     float: right;
-    padding: -10px;
+    padding: 10px;
 
 
   }
