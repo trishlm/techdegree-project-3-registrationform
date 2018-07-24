@@ -151,9 +151,7 @@ input[type=radio]:checked + label:before {
   content: "\25CF";
   line-height: 0.9;
   text-align: center;
-
 }
-
 
 /* ---Change Checbox and Radiobutton Appearance-END--- */
 
@@ -179,11 +177,9 @@ input[type=radio]:checked + label:before {
   padding-right: 10px;
 }
 
-
 textarea {
   padding: 5px;
   margin-bottom: 30px;
-
   height: 100px;
 }
 
@@ -239,8 +235,6 @@ option {
     width: 75%;
     float: right;
     padding: 10px;
-
-
   }
 
   input[type="text"]:last-of-type {
